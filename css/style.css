@@ -25,6 +25,11 @@ h2 {
     font-size: 1.8rem;
 }
 
+b {
+    color: #66c0f4;
+    font-weight: bold;
+}
+
 p {
     margin-bottom: 15px;
     font-size: 1rem;
