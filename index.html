@@ -4,35 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo(a) ao GameStore</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <header> 
-        <h1>GameStore: seu site de vendas de jogos favoritos!</h1> 
-    </header>
     <nav>
-        <b>Home</b> |
-        <a href="loja.html">Loja</a> |
-        <a href="suporte.html">Suporte</a> |
-        <a href="equipe.html">Equipe</a>
+      <div class="nav-container">  
+        <a href="index.html">
+            <img src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+                 alt="Logo da Loja"                   
+                 id="logo"> 
+        </a>      
+         <div class="menu-links">  
+            <a href="loja.html">LOJA</a> 
+            <a href="suporte.html">SUPORTE</a> 
+            <a href="equipe.html">EQUIPE</a>
+         </div>
+      </div>   
     </nav>
+      <div id="banner">
+            <h1>Bem-vindo à GameStore</h1>
+            <p>Descubra os melhores jogos com os melhores preços.</p>
+      </div>
+      <div class="destaque">
+             Promoção de Fim de Semana: até 80% OFF em jogos AAA!
+      </div> 
     <main>
-        <h2>Bem-vindos ao GameStore</h2>
-        <p>
-            A <strong>GameStore</strong> é uma plataforma dedicada a venda de jogos. Aqui você encontra uma seleção variada de títulos para todos os gostos — desde os clássicos que marcaram gerações até os lançamentos mais esperados do mercado.
-        </p>
-        <p>
-            Nosso objetivo é oferecer uma experiência prática e intuitiva para quem busca explorar, conhecer e adquirir jogos digitais com facilidade. Navegue pelas categorias, descubra novos universos e leve para casa sua próxima aventura.
-        </p> 
-        
-    </main>
-    <footer>
-        <p>
-            © 2025 GameStore. Todos os direitos reservados.
-        </p>
+        <section class="grade-jogos">
+            <div class="card-jogo">
+                <h2>Battlefield 6</h2>
+                <img src="./imagens/battlefield 6 index.jpg" alt="Battlefield 6">
+                <p>Experimente combates intensos em larga escala com gráficos de última geração.</p>
+                <button>Comprar</button>
+            </div>
 
-        <p>
-             Projeto acadêmico criado para fins educacionais. Todos os conteúdos são fictícios e utilizados apenas para demonstração.
-        </p>
+            <div class="card-jogo">
+                <h2>GTA 6</h2>
+                <img src="./imagens/gta 6 index.jpg" alt="GTA 6">
+                <p>Explore uma nova cidade com liberdade total em um mundo aberto revolucionário.</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card-jogo">
+                <h2>EA Sports FC 26</h2>
+                <img src="./imagens/ea fc 26 index.webp" alt="EA Sports FC 26">
+                <p>Monte seu time dos sonhos e dispute campeonatos com realismo impressionante.</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card-jogo">
+                <h2>Elden Ring</h2>
+                <img src="./imagens/elden ring index.jpg" alt="Elden Ring">
+                <p>Explore um mundo sombrio e épico criado por Hidetaka Miyazaki e George R. R. Martin.</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card-jogo">
+                <h2>Resident Evil 9</h2>
+                <img src="./imagens/resident-evil-9-5 index.webp" alt="Resident Evil 9">
+                <p>Enfrente horrores ainda mais intensos em uma nova jornada de sobrevivência.</p>
+                <button>Comprar</button>
+                </div>
+        </section>
+    </main>
+    <footer class="gamestore-footer">
+      <div class="footer-container">  
+        <p>© 2025 GameStore. Todos os direitos reservados.</p>
+        <p>Projeto acadêmico criado para fins educacionais. Todos os conteúdos são fictícios e utilizados apenas para demonstração.</p>
+      </div>  
     </footer>  
 </body>
 </html>

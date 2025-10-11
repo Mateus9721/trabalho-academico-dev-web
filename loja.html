@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo(a) ao GameStore</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <header> 
-        <h1>GameStore: seu site de vendas de jogos favoritos!</h1> 
-    </header>
     <nav>
-        <a href="index.html">Home</a> |
-        <b>Loja</b> |
-        <a href="suporte.html">Suporte</a> |
-        <a href="equipe.html">Equipe</a>
-    </nav>
+      <div class="nav-container">  
+        <a href="index.html">
+            <img src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+                 alt="Logo da Loja"                   
+                 id="logo"> 
+        </a>      
+         <div class="menu-links">  
+            <a href="loja.html">LOJA</a> 
+            <a href="suporte.html">SUPORTE</a> 
+            <a href="equipe.html">EQUIPE</a>
+         </div>
+      </div>   
+    </nav> 
     <main>
-        <h2>Loja de jogos</h2>
-        <p>Procure pelo jogo que deseja:</p>
-        <table border="1">
+          <h2>Loja de jogos</h2>
+          <p>Procure pelo jogo que deseja:</p>
+        <table>
             <thead>
                 <tr>
                     <th>Jogo</th>
@@ -75,14 +81,11 @@
             </tr>
         </table>    
     </main>
-    <footer>
-        <p>
-            © 2025 GameStore. Todos os direitos reservados.
-        </p>
-
-        <p>
-             Projeto acadêmico criado para fins educacionais. Todos os conteúdos são fictícios e utilizados apenas para demonstração.
-        </p>
-    </footer>   
+    <footer class="gamestore-footer">
+      <div class="footer-container">  
+        <p>© 2025 GameStore. Todos os direitos reservados.</p>
+        <p>Projeto acadêmico criado para fins educacionais. Todos os conteúdos são fictícios e utilizados apenas para demonstração.</p>
+      </div>  
+    </footer>    
 </body>
 </html>
