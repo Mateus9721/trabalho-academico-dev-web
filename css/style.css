@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -345,4 +345,123 @@ main ul li {
     margin-bottom: 6px;
     font-size: 1rem;
     color: #c7d5e0;
+}
+
+.popup-erro {
+  position: absolute;
+  background: #ff4d4d;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  white-space: nowrap;
+  z-index: 1000;
+  animation: fadeOut 3s forwards;
+}
+
+.popup-erro::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  transform: translateY(-50%);
+  border: 8px solid transparent;
+  border-right-color: #ff4d4d;
+}
+
+@keyframes fadeOut {
+  0%, 80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+body.tema-claro {
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+body.tema-claro h1, 
+body.tema-claro h2, 
+body.tema-claro b {
+  color: #005a9c;
+}
+
+body.tema-claro nav,
+body.tema-claro footer,
+body.tema-claro .card-jogo,
+body.tema-claro form,
+body.tema-claro ul,
+body.tema-claro .destaque {
+  background-color: #ffffff;
+  color: #222;
+  border-color: #ccc;
+}
+
+body.tema-claro table th {
+  background-color: #e0e0e0;
+  color: #005a9c;
+}
+
+body.tema-claro table td {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+body.tema-claro tr:hover td {
+  background-color: #eaeaea;
+}
+
+body.tema-claro button {
+  background-color: #005a9c;
+  color: #fff;
+}
+
+body.tema-claro button:hover {
+  background-color: #007acc;
+}
+
+body.tema-claro #banner {
+  background: linear-gradient(to right, #dbe9f4, #cce0f0, #bcd6ec);
+  color: #000;
+}
+
+body.tema-claro .menu-links a {
+  color: #222;
+}
+
+body.tema-claro .menu-links a:hover {
+  color: #005a9c;
+} 
+
+body.tema-claro h1,
+body.tema-claro h2,
+body.tema-claro b {
+  color: #005a9c;
+}
+
+body.tema-claro p,
+body.tema-claro li,
+body.tema-claro label {
+  color: #222;
+}
+
+body.tema-claro .menu-links a {
+  color: #222;
+}
+
+body.tema-claro .menu-links a:hover {
+  color: #005a9c;
+}
+
+body.tema-claro table th {
+  color: #005a9c;
+}
+
+body.tema-claro table td {
+  color: #222;
+}
+
+body.tema-claro .card-jogo,
+body.tema-claro form,
+body.tema-claro ul {
+  color: #222;
 }
