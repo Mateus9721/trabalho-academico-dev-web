@@ -630,3 +630,274 @@ body.tema-claro .perfil-info h3 {
     gap: 18px;
     margin-top: 25px;
 }
+
+.form-jogo-modern {
+    background: #22394d;
+    border: 1px solid #66c0f4;
+    padding: 40px;
+    max-width: 880px;     /* ⚡ Agora mais largo, mas não exagerado */
+    width: 90%;           /* ocupa até 90% da tela, mas respeita o max */
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(102, 192, 244, 0.25);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colunas balanceadas */
+    gap: 25px 30px;                 /* espaçamento bonito */
+    animation: fadeIn 0.6s ease;
+}
+
+/* Grupos que precisam ocupar a largura toda */
+.form-jogo-modern .form-group:nth-last-child(1),
+.form-jogo-modern .form-group:nth-last-child(2) {
+    grid-column: span 2;
+}
+
+.btn-jogo {
+    grid-column: span 2;
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: #c7d5e0;
+}
+
+.form-group input {
+    background: #1b2838;
+    border: 1px solid #66c0f4;
+    padding: 14px;
+    border-radius: 6px;
+    color: #c7d5e0;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #8ecae6;
+    box-shadow: 0 0 8px rgba(102, 192, 244, 0.5);
+}
+
+.btn-jogo {
+    background: #66c0f4;
+    color: #171a21;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-jogo:hover {
+    background: #8ecae6;
+}
+
+/* animação suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Tema claro */
+body.tema-claro .form-jogo-modern {
+    background: #ffffff;
+    border-color: #ccc;
+}
+
+body.tema-claro .form-group input {
+    background: #f7f7f7;
+    color: #222;
+}
+
+body.tema-claro .btn-jogo {
+    background: #005a9c;
+    color: #fff;
+}
+
+.form-jogo-modern {
+    background: #22394d;
+    border: 1px solid #66c0f4;
+    padding: 40px;
+    max-width: 880px;
+    width: 90%;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(102, 192, 244, 0.25);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 30px;
+    animation: fadeIn 0.6s ease;
+}
+
+/* Grupo de cada campo */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.form-group label {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    color: #c7d5e0;
+}
+
+/* Inputs — TODOS IGUAIS */
+.form-group input {
+    width: 100%;
+    height: 50px;              /* ⚡ Todos exatamente a mesma altura */
+    background: #1b2838;
+    border: 1px solid #66c0f4;
+    border-radius: 6px;
+    color: #c7d5e0;
+    padding: 12px 14px;
+    font-size: 1.1rem;
+    box-sizing: border-box;    /* ⚡ tamanho consistente */
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #8ecae6;
+    box-shadow: 0 0 8px rgba(102, 192, 244, 0.5);
+}
+
+/* Inputs que precisam ocupar as duas colunas */
+.form-jogo-modern .form-group:nth-last-child(1),
+.form-jogo-modern .form-group:nth-last-child(2) {
+    grid-column: span 2;
+}
+
+/* Botão */
+.btn-jogo {
+    grid-column: span 2;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    background: #66c0f4;
+    color: #171a21;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-jogo:hover {
+    background: #8ecae6;
+}
+
+.form-jogo-modern {
+    background: #22394d;
+    border: 1px solid #66c0f4;
+    padding: 40px;
+    max-width: 900px;
+    width: 100%;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(102, 192, 244, 0.25);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* 2 colunas */
+    gap: 25px;
+}
+
+/* Cada campo */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* LABEL */
+.form-group label {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: #c7d5e0;
+}
+
+/* INPUTS */
+.form-group input {
+    background: #1b2838;
+    border: 1px solid #66c0f4;
+    padding: 14px;
+    border-radius: 6px;
+    color: #c7d5e0;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+    height: 55px;
+    box-sizing: border-box;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+    height: auto;
+}
+
+
+.form-group.full {
+    grid-column: span 2;
+}
+
+
+.btn-jogo {
+    grid-column: span 2;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    background: #66c0f4;
+    color: #171a21;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-jogo-modern #ano {
+    max-width: 100%;
+}
+
+.form-jogo-modern input {
+    height: 55px;
+}
+
+.form-jogo-modern .form-group input {
+    width: 100%;
+    height: 55px;
+}
+
+.form-jogo-modern #ano {
+    width: 100% !important;
+    height: 55px !important;
+    padding-right: 10px;
+}
+
+.form-jogo-modern .form-group input {
+    height: 55px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+.form-jogo-modern #ano {
+    height: 55px !important;
+    width: 100% !important;
+    padding-right: 10px;
+}
