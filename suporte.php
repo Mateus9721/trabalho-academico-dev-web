@@ -3,26 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem-vindo(a) ao GameStore</title>
+    <title>GameStore - Suporte</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <nav>
-      <div class="nav-container">  
-        <a href="index.html">
-            <img src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
-                 alt="Logo da Loja"                   
-                 id="logo"> 
-        </a>      
-         <div class="menu-links">
-            <a href="index.html">HOME</a>  
-            <a href="loja.html">LOJA</a> 
-            <b>SUPORTE</b> 
-            <a href="equipe.html">EQUIPE</a>
-            <button id="toggle-tema" class="botao-tema">🌞 Claro</button>
-         </div>
-      </div>   
-    </nav> 
+    <?php include 'nav.php'; ?> 
     <main>
         <h2>Suporte GameStore</h2>
         <p>Como podemos ajudar?</p>
@@ -41,12 +26,7 @@
             <button type="submit">Enviar</button>
         </form>
     </main>
-    <footer class="gamestore-footer">
-      <div class="footer-container">  
-        <p>© 2025 GameStore. Todos os direitos reservados.</p>
-        <p>Projeto acadêmico criado para fins educacionais. Todos os conteúdos são fictícios e utilizados apenas para demonstração.</p>
-      </div>  
-    </footer>  
+    <?php include 'footer.php'; ?>  
     <script src="./JS/validacao.js"></script>
     <script src="JS/tema.js"></script>
 </body>

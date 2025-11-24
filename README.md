@@ -1,1 +1,1 @@
-Desenvolvmento web com HTML, CSS, JavaScript e PHP.
+Desenvolvimento web com HTML, CSS, JavaScript e PHP.

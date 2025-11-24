@@ -465,3 +465,168 @@ body.tema-claro form,
 body.tema-claro ul {
   color: #222;
 }
+
+.modal-overlay {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal {
+  background: #2a475e; 
+  padding: 25px;
+  max-width: 420px;
+  width: 90%;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  color: #c7d5e0; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #66c0f4; 
+}
+
+.modal button {
+  margin-top: 20px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 4px;
+  background-color: #66c0f4;
+  color: #171a21;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal button:hover {
+  background-color: #8ecae6;
+}
+
+body.tema-claro .modal {
+  background: #ffffff;
+  color: #222;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+body.tema-claro .modal h3 {
+  color: #005a9c;
+}
+
+body.tema-claro .modal button {
+  background-color: #005a9c;
+  color: #fff;
+}
+
+body.tema-claro .modal button:hover {
+  background-color: #007acc;
+}
+
+.equipe-box {
+    background: linear-gradient(145deg, #22394d, #1b2838);
+    border: 1px solid #66c0f4;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(102, 192, 244, 0.2);
+    text-align: center;
+    max-width: 550px;
+    width: 95%;
+    animation: fadeIn 0.8s ease;
+}
+
+.equipe-box h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.equipe-box p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.perfil-dev {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    background: #2a475e;
+    border-radius: 10px;
+    border: 1px solid #66c0f4;
+    box-shadow: 0 0 15px rgba(102, 192, 244, 0.15);
+}
+
+.perfil-info h3 {
+    font-size: 1.5rem;
+    color: #66c0f4;
+    margin-bottom: 8px;
+}
+
+.perfil-info .matricula {
+    font-size: 1.1rem;
+    opacity: 0.85;
+}
+
+body.tema-claro .equipe-box {
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+body.tema-claro .perfil-dev {
+    background: #f0f0f0;
+    border-color: #ccc;
+}
+
+body.tema-claro .perfil-info h3 {
+    color: #005a9c;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.suporte-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.suporte-card {
+    background-color: #2a475e;
+    border: 1px solid #66c0f4;
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(102, 192, 244, 0.25);
+    max-width: 650px;
+    width: 95%;
+    text-align: center;
+    animation: fadeIn 0.7s ease;
+}
+
+.suporte-card h2 {
+    color: #66c0f4;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.suporte-card .subtitulo {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.form-suporte {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 25px;
+}

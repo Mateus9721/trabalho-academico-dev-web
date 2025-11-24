@@ -7,22 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <nav>
-      <div class="nav-container">  
-        <a href="index.html">
-            <img src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
-                 alt="Logo da Loja"                   
-                 id="logo"> 
-        </a>      
-         <div class="menu-links">
-            <b>HOME</b>  
-            <a href="loja.html">LOJA</a> 
-            <a href="suporte.html">SUPORTE</a> 
-            <a href="equipe.html">EQUIPE</a>
-            <button id="toggle-tema" class="botao-tema">🌞 Claro</button>
-         </div>
-      </div>   
-    </nav>
+    <?php include 'nav.php'; ?>
       <div id="banner">
             <h1>Bem-vindo à GameStore</h1>
             <p>Descubra os melhores jogos com os melhores preços.</p>
@@ -38,28 +23,24 @@
                 <p>Experimente combates intensos em larga escala com gráficos de última geração.</p>
                 <button>Comprar</button>
             </div>
-
             <div class="card-jogo">
                 <h2>GTA 6</h2>
                 <img src="./imagens/gta 6 index.jpg" alt="GTA 6">
                 <p>Explore uma nova cidade com liberdade total em um mundo aberto revolucionário.</p>
                 <button>Comprar</button>
             </div>
-
             <div class="card-jogo">
                 <h2>EA Sports FC 26</h2>
                 <img src="./imagens/ea fc 26 index.webp" alt="EA Sports FC 26">
                 <p>Monte seu time dos sonhos e dispute campeonatos com realismo impressionante.</p>
                 <button>Comprar</button>
             </div>
-
             <div class="card-jogo">
                 <h2>Elden Ring</h2>
                 <img src="./imagens/elden ring index.jpg" alt="Elden Ring">
                 <p>Explore um mundo sombrio e épico criado por Hidetaka Miyazaki e George R. R. Martin.</p>
                 <button>Comprar</button>
             </div>
-
             <div class="card-jogo">
                 <h2>Resident Evil 9</h2>
                 <img src="./imagens/resident-evil-9-5 index.webp" alt="Resident Evil 9">
@@ -68,12 +49,7 @@
                 </div>
         </section>
     </main>
-    <footer class="gamestore-footer">
-      <div class="footer-container">  
-        <p>© 2025 GameStore. Todos os direitos reservados.</p>
-        <p>Projeto acadêmico criado para fins educacionais. Todos os conteúdos são fictícios e utilizados apenas para demonstração.</p>
-      </div>  
-    </footer> 
+    <?php include 'footer.php'; ?>
     <script src="JS/tema.js"></script> 
 </body>
 </html>
